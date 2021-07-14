@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Titanic Survival Prediction</title>
+    <link rel="stylesheet" type="text/css" href="./static/mycss.css", media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="./static/mycss2.css", media="screen,projection"/>
+</head>
+<body>
+<div id="body">
+            <div class='background'>
+                <div class="text1">
+                    <h1>WELCOME TO ML TITANIC SURVIVAL PREDICTION</h1>
+                    <p id=header>made with Nitin</p>
+                </div>
+            </div>
+    <div class=paragraph1>
+        <p>
+             I created a machine learning model using the multiple regression equation. I tries to pridict the passenger is survived or not.
+        </p>
+        
+    </div>
+
+               
+
+    <div class=paragraph2>
+        <p>
+        Its a fun project ,I just want to make the end product using the machine learning model,which I created in python.
+        </p>
+    </div>
+      <div class=form>
+        
+        <form action="/predict" method="post">
+            </Select><br>
+            
+            <label>Age (in Years):</label><br>
+            <input type="number" placeholder="Enter Your Age here" id='Age' name='Age'><br>
+            
+            
+            
+            <label>Fare :</label><br>
+            <input type="number" placeholder="Fare of Ticket" id='Fare' name='Fare'><br>
+            
+            </Select><br>
+            <label class='select_label'>What is Your Sex? </label>
+            <Select id='Sex' name='Sex'>
+            <option value='1'>Male</option>
+            <option selected value="0" >Female</option>
+            </Select><br>
+            
+            <label>sibsp :</label><br>
+            <input type="number" placeholder="Siblings" id='Siblings' name='Sibling'><br>
+
+            <label>Parch :</label><br>
+            <input type="number" placeholder="Parch" id='Parch' name='Parch'><br>
+
+            <label>Pclass :</label><br>
+            <input type="number" placeholder="Pclass Ex- 1,2,3" id='Pclass' name='Pclass '><br>
+
+            <label>Embarked :</label><br>
+            <input type="number" placeholder="Embarked Ex- 1,0,2" id='Embarked' name='Embarked '><br>
+
+            
+            </Select><br>
+                <button id=submitbtn type="submit" value="Submit">Submit</button><br>
+           </form>
+
+      </div>
+                    <div id=result1>
+                        <p>Knowing is not enough; we must apply. Willing is not enough; we must do</p>
+                </div>
+
+      <div id=result>
+
+       <h1> {{pred}}</h1>
+   </div>
